@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<!-- Head is for settings and configuration of your website/html document-->
+	<head>
+		<meta charset="utf-8"> <!-- allow different chars with encoding, like ÅÄÖ -->
+		<title>Title</title>
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- 
+			There are 3 ways om implementing CSS. And they have different priority.
+			Priority order:
+				1. Inline (style="")
+				2. Embedded (<style></style>)
+				3. Linked  (<link rel="stylesheet" href="css/reset.css">) 
+
+			It's best practice to only use Linked stylesheet. It creates a more readable and structured code that will be easier to maintain
+		 -->
+		
+		<!-- 
+			If 2 styles conflict on the same element, then the more specific a selector is, the higher priority it gets in CSS.
+			
+			Specificity order
+				1. ID selectors (#example)
+				2. Class selectors (.example)
+				3. Type selectors (div)
+
+
+			furthermore if 2 styles conflict on the same element, with the same priority. Then the latter will override the previous style
+		 -->
+		<style>
+
+			/* #main-container {
+				background-color: beige;
+			}
+
+			#special-headline {
+				background-color: skyblue;
+			}
+
+			.list-item-ul {
+				color: red;
+			}
+
+			.list-item-ol {
+				color: blue;
+			}
+
+			h3 {
+				background-color: yellowgreen;
+			}
+
+			.bg-color-white {
+				background-color: white;
+			}
+
+			.bg-color-pink {
+				background-color: pink;
+			}
+			
+			
+			#bg-color-plum {
+				background-color: plum;
+			}
+
+			h6 {
+				background-color: greenyellow;
+			} */
+
+			
+		</style>	
+	</head>
+
+	<!-- Body is HTML code specific for the user -->
+	<body>
+		<div id="main-container"> <!-- Main container -->
+			<h1>A short intro to HTML (HyperText Markup language)</h1>
+			
+			<br> <!-- new line -->
+			<hr> <!-- horizontal line -->
+			<br> <!-- new line -->
+			
+			<h1  id="special-headline">These are headline tags in different sizes</h1>
+			<h2>These are headline tags in different sizes</h2>
+			<h3>These are headline tags in different sizes</h3>
+			<h4>These are headline tags in different sizes</h4>
+			<h5>These are headline tags in different sizes</h5>
+			<h6 id="bg-color-plum" class="bg-color-pink bg-color-white">These are headline tags in different sizes</h6>
+
+			<br> <!-- new line -->
+			<hr> <!-- horizontal line -->
+			<br> <!-- new line -->
+
+			<h3>Section for componenets and texts</h3>
+
+			<div> '< div >' is a type of section-tag. May contain other sections, components and texts.</div>
+			<p> '< p >' is a paragraph-tag. Used for texts.</p>
+
+			<br> <!-- new line -->
+			<hr> <!-- horizontal line -->
+			<br> <!-- new line -->
+
+			<h3>Lists</h3>
+
+			<ul>
+				<li class="list-item-ul">'< ul >' unordered list. Contains  '< li >' listitems</li>
+				<li class="list-item-ul">'< ul >' unordered list. Contains  '< li >' listitems</li>
+				<li class="list-item-ul">'< ul >' unordered list. Contains  '< li >' listitems</li>
+			</ul>
+
+			<ol>
+				<li class="list-item-ol">'< ol >' ordered list. Contains  '< li >' listitems</li>
+				<li class="list-item-ol">'< ol >' ordered list. Contains  '< li >' listitems</li>
+				<li class="list-item-ol">'< ol >' ordered list. Contains  '< li >' listitems</li>
+			</ol>
+
+			<br> <!-- new line -->
+			<hr> <!-- horizontal line -->
+			<br> <!-- new line -->
+
+			<h3>Links</h3>
+
+			<a href="#special-headline3">A link that doesn't go anywhere</a>
+			<br> <!-- new line -->
+			<a href="https://google.se">A link to google.se</a>
+
+			<br> <!-- new line -->
+			<hr> <!-- horizontal line -->
+			<br> <!-- new line -->
+
+			<h3>Normal image</h3>
+
+			<img src="img/logo.png" width="100" height="auto">
+
+			<br> <!-- new line -->
+			<hr> <!-- horizontal line -->
+			<br> <!-- new line -->
+			
+			<h3>Clickable image</h3>
+
+			<a href="https://google.se"><img src="img/logo.png" width="200"></a>
+
+
+			<br> <!-- new line -->
+			<hr> <!-- horizontal line -->
+			<br> <!-- new line -->
+			
+			<h3>Componenets of a form. Textfield and button</h3>
+
+			<input type="text" value="Default text">
+			<br>
+			<input type="text" placeholder="Email">
+			<br>
+			<input type="button" value="Klick me :)">
+
+			<br> <!-- new line -->
+			<hr> <!-- horizontal line -->
+			<br> <!-- new line -->
+			
+			<h3>Id and class</h3>
+
+			<p>
+				Id and class are attributes that can be placed in all elements (Global attributes). They are used by CSS and JS to target specific elements, so that they can be manipulated with design or dynamic functionalites. 
+				<ol>
+					<li>- A specific ID may be used only once in an HTML-document, while a specific class may be used multiple times.</li>
+					<li>- Furthermore a tag may have only one ID, but can have multiple classes.</li>
+				</ol>
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+#main-container {
+  background-color: beige;
+}
+
+#special-headline {
+  background-color: skyblue;
+}
+
+.list-item-ul {
+  color: red;
+}
+
+.list-item-ol {
+  color: blue;
+}
+
+h3 {
+  background-color: yellowgreen;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.bg-color-pink {
+  background-color: pink;
+}
+
+
+#bg-color-plum {
+  background-color: plum;
+}
+
+h6 {
+  background-color: greenyellow;
+}

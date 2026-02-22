@@ -1,0 +1,15 @@
+Första lektionen var en introduktion till HTML och CSS samt lite koncept inom webb som client, server osv. 
+
+---------------------------------------------------------------------------------------------------------------
+
+Studera först koden i html och gör uppgifterna från freecodecamp för att öva: 
+
+https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-html-by-building-a-cat-photo-app
+
+Studera sedan koden i CSS och gör dessa uppgifter för att öva: 
+
+https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu
+
+---------------------------------------------------------------------------------------------------------------
+
+
