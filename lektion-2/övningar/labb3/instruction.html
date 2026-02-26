@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 4 - arrays</title>
+<style>
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 8px auto;
+    max-width: 700px;
+}
+
+h2 {
+    line-height: 2.5em;
+    border-bottom: 1px solid #aaa;
+}
+
+h3 {
+    line-height: 2.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    margin-bottom: 22px;
+}
+
+div.answer {
+  font-family: "Courier New", monospace;
+  white-space: pre;
+  margin-bottom: 1em;
+}
+
+.fail {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.nopass {
+    color: olive;
+}
+
+.pass {
+    color: green;
+}
+
+.passdistinct {
+    color: DarkGoldenRod;
+}
+table, th, td {
+    border: 1px solid #666;
+}
+
+code {
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 1px;
+    font-size: larger;
+}
+
+pre code {
+    display: block;
+    background-color: #eee;
+    border: none;
+    border-left: 2px solid #999;
+    padding: 0.5em;
+    margin-bottom: 22px;
+}
+</style>
+</head>
+<body>
+
+<pre>
+76810db5d55af030731fff40d1159434
+javascript1
+lab4
+v2
+dbwebb clone javascript1
+2019-10-16 15:02:05
+v4.0.0 (2019-03-05)
+</pre>
+
+<p><i>Generated 2019-10-16 17:02:05 by <a href="https://github.com/dbwebb-se/lab">dbwebb lab-utility</a> v4.0.0 (2019-03-05).</i></p>
+<hr>
+
+<h1>Lab 4 - arrays</h1>
+<p>Practise arrays. You might find useful help here:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</p>
+
+
+<h2>1. Arrays</h2>
+<p>To copy an array use array.slice() to make a real copy, not a shallow one.</p>
+
+
+<h3>Exercise 1.1 (1 points)</h3>
+<p>Create a variable <code>array2</code> holding an array with the words: <code>[potato,carrot,onion,leek,cabbage]</code>. Return the element on position: <code>1</code> in array2.</p>
+
+<p>Answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.2 (1 points)</h3>
+<p>Use the variable <code>array2</code>. Concatenate the first item and the last item as a string. Separate the string with <code>-</code>.</p>
+
+<p>Answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.3 (1 points)</h3>
+<p>Create an array, <code>array1</code>, with the items <code>47,98,-13,0,-412,499,3,1200</code>.</p>
+
+<p>Merge the two arrays, <code>array1</code> and <code>array2</code>, into a third variable <code>array3</code>.</p>
+
+<p>Answer with array3.</p>
+
+
+
+
+
+
+<h3>Exercise 1.4 (1 points)</h3>
+<p>Create a variable <code>array21</code> as a clone of <code>array2</code>.
+Sort <code>array21</code>.
+(Hint: http://stackoverflow.com/questions/3978492/javascript-fastest-way-to-duplicate-an-array-slice-vs-for-loop)</p>
+
+<p>Answer with the resulting array.</p>
+
+
+
+
+
+
+<h3>Exercise 1.5 (1 points)</h3>
+<p>Create a variable <code>array11</code> as a copy of <code>array1</code>.
+Sort <code>array11</code> according to its values. The smallest value comes first and the largest value comes last.</p>
+
+<p>Answer with the resulting array.</p>
+
+
+
+
+
+
+<h3>Exercise 1.6 (1 points)</h3>
+<p>Create a variable <code>array22</code> which holds the same content as <code>array2</code> - but all strings are uppercase.
+Use the built-in Array-function <code>map()</code> to solve it.</p>
+
+<p>Answer with the array.</p>
+
+
+
+
+
+
+<h3>Exercise 1.7 (1 points)</h3>
+<p>Create a new array, <code>array12</code>. It should contain all positive numbers from the <code>array1</code>.
+Use the built-in array-function <code>filter()</code> to solve it.</p>
+
+<p>Answer with the resulting array.</p>
+
+
+
+
+
+
+<h3>Exercise 1.8 (1 points)</h3>
+<p>Create a function <code>arrayAverage()</code> that takes one array as argument and returns the average of all elements in that array.</p>
+
+<p>Try out the function using <code>array1</code> and answer with the rounded integer result.</p>
+
+
+
+
+
+
+
+<h2>2. Modify arrays</h2>
+<p>Learn how to modify arrays.</p>
+
+
+<h3>Exercise 2.1 (1 points)</h3>
+<p>Create a new array <code>myArray</code> and make it a copy of <code>array1</code>. Switch place on the first and the last element, with the help of built-in array-functions.
+Use the array-functions <code>pop(), push(), shift() and unshift()</code>.</p>
+
+<p>Answer with <code>myArray</code>.</p>
+
+
+
+
+
+
+<h3>Exercise 2.2 (1 points)</h3>
+<p>In <code>myArray</code> change the <code>3rd and 4th</code> value to the boolean value <code>false</code> using built-in array-function <code>splice()</code>.</p>
+
+<p>Answer with the resulting array.</p>
+
+
+
+
+
+
+<h3>Exercise 2.3 (1 points)</h3>
+<p>Remove the <code>4th and 5th</code> item in &#8216;myArray&#8217;. Then insert the string <code>MEGA</code> after the item <code>3rd</code>. Answer with the resulting array.</p>
+
+
+
+
+
+
+
+<hr>
+<code>76810db5d55af030731fff40d1159434</code>
+
+</body>
+</html>

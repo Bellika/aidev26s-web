@@ -1,0 +1,18 @@
+För er som vill djupdyka mer i CSS grid och flexbox kan ni kolla in de här länkarna.
+
+-----------------------------------------------------------------------------------------
+
+GRIDS 
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+https://cssgridgarden.com/
+
+-----------------------------------------------------------------------------------------
+
+FLEXBOX
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+http://flexboxfroggy.com/
+

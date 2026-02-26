@@ -1,0 +1,9 @@
+Hej! Denna lektion var en introduktion till JS och DOM. 
+
+Ni kan studera koden i dom-intro och js-intro och sedan göra labbarna (om man känner att det är givande för att förstå js bättre,
+annars kan man istället prova att bygga en egen enkel hemsida med html, css och javascript). Labbarna har en svarsfil, denna krånglar tyvärr ibland
+då övningarna har ett par år på nacken. Om det krånglar kan man console.logga sitt svar och använda t.ex chatGPT för att rätta. Det viktiga är att
+man övar på JS syntax och att översätta problem i text till kod.
+
+Jag har även lagt till i textfilen grid-flexbox.txt lite länkar till dokumentation och övnigar för er som vill fördjupa er i positionering med css.
+

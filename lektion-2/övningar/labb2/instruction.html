@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 3 - functions</title>
+<style>
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 8px auto;
+    max-width: 700px;
+}
+
+h2 {
+    line-height: 2.5em;
+    border-bottom: 1px solid #aaa;
+}
+
+h3 {
+    line-height: 2.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    margin-bottom: 22px;
+}
+
+div.answer {
+  font-family: "Courier New", monospace;
+  white-space: pre;
+  margin-bottom: 1em;
+}
+
+.fail {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.nopass {
+    color: olive;
+}
+
+.pass {
+    color: green;
+}
+
+.passdistinct {
+    color: DarkGoldenRod;
+}
+table, th, td {
+    border: 1px solid #666;
+}
+
+code {
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 1px;
+    font-size: larger;
+}
+
+pre code {
+    display: block;
+    background-color: #eee;
+    border: none;
+    border-left: 2px solid #999;
+    padding: 0.5em;
+    margin-bottom: 22px;
+}
+</style>
+</head>
+<body>
+
+<pre>
+103a89eac5bbd238d5bb6013b1a025ae
+javascript1
+lab3
+v2
+dbwebb clone javascript1
+2019-10-16 15:01:51
+v4.0.0 (2019-03-05)
+</pre>
+
+<p><i>Generated 2019-10-16 17:01:51 by <a href="https://github.com/dbwebb-se/lab">dbwebb lab-utility</a> v4.0.0 (2019-03-05).</i></p>
+<hr>
+
+<h1>Lab 3 - functions</h1>
+<p>Practice to write functions.</p>
+
+
+<h2>1. Basic functions</h2>
+<p>Practice on basic functions.</p>
+
+
+<h3>Exercise 1.1 (1 points)</h3>
+<p>Create a function <code>sumRangeNumbers()</code> that returns the sum of all numbers between two chosen numbers. The function should take two arguments, one representing the lowest boundary and one that represents the highest boundary. For example, the arguments 10 and 20 should return the sum of 10+11+12+13&#8230;+20.</p>
+
+<p>Test it using the values <code>22 and 91</code>, answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.2 (1 points)</h3>
+<p>Create a function called <code>fruitColor()</code> that takes one argument called <code>fruit</code> and returns the color of the fruit.</p>
+
+<p>The function should be aware of the following fruits (<code>banana, apple, kiwi, plum</code>) with respective color (<code>yellow, green, green, red</code>).</p>
+
+<p>Try it out using the fruit <code>plum</code> and answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.3 (1 points)</h3>
+<p>Create a function <code>printRange()</code> that takes two arguments <code>rangeStart</code> and <code>rangeStop</code> and returns a string with all numbers comma-separated in the range.</p>
+
+<p>Try it using the arguments <code>25 and 46</code>.</p>
+
+<p>Answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.4 (1 points)</h3>
+<p>Create a function <code>printRangeReversed()</code> that takes two arguments <code>rangeStart</code> and <code>rangeStop</code> and returns a string with all numbers comma-separated in the range.</p>
+
+<p>Try it using the arguments <code>46 and 25</code>.</p>
+
+<p>Answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.5 (1 points)</h3>
+<p>Create a function <code>printAnyRange()</code> that takes two arguments <code>rangeStart</code> and <code>rangeStop</code> and returns a string with all numbers comma-separated in the range.</p>
+
+<p>If <code>rangeStart</code> is smaller than <code>rangeStop</code> then call the function <code>printRange()</code>.</p>
+
+<p>If <code>rangeStart</code> is greater than <code>rangeStop</code> the call the function <code>printRangeReversed()</code>.</p>
+
+<p>Try it using the arguments <code>25 and 46</code> (both ways).</p>
+
+<p>Answer with the result using arguments 25 and 46.</p>
+
+
+
+
+
+
+<h3>Exercise 1.6 (1 points)</h3>
+<p>Create a function called <code>stringRepeat()</code> that returns a string a specific number of times. The function should take two arguments, one string and one number: <code>grey</code> and <code>12</code>. The number represents the number of times the string should be added to a string.</p>
+
+<p>Test the function and answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.7 (1 points)</h3>
+<p>Create a function <code>inRange()</code> that takes three arguments, <code>rangeStart</code>, <code>rangeStop</code> and <code>value</code>.</p>
+
+<p>The function should return boolean <code>true</code> if value is greater than rangeStart and less than rangeStop. Otherwise it should return boolean <code>false</code>.</p>
+
+<p>Try it out using the range <code>131 - 547</code> and the value <code>434</code>.</p>
+
+<p>Answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.8 (1 points)</h3>
+<p>Try out the function <code>inRange()</code> using the range <code>131 - 547</code> and the value <code>636</code>.</p>
+
+<p>Answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.9 (1 points)</h3>
+<p>Create a function called <code>degreesToRadians()</code> that should take one argument, a degree value. The function should convert the value to radians and return the result with max 4 decimals.</p>
+
+<p>Test your function with the value <code>32</code> and answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 1.10 (1 points)</h3>
+<p>Create a function called <code>fizzBuzz()</code> that takes two arguments <code>start</code> and <code>stop</code> and returns a comma-separated string.</p>
+
+<p>The arguments represents the starting point and stop point of the game <code>Fizz Buzz</code> (http://en.wikipedia.org/wiki/Fizz_buzz). The function should run from start to stop and add <code>Fizz</code>, <code>Buzz</code> or both to your result-variable at appropriate numbers.</p>
+
+<p>Each entry to your result should be comma-separated. If <code>stop</code> is equal or lower than <code>start</code>, the function should return an appropriate error message.</p>
+
+<p>Test the function using <code>start=1 and stop=30</code>.</p>
+
+
+
+
+
+
+
+<h2>2. Extra assignments</h2>
+<p>These questions are worth 3 points each. Solve them for extra points. In this section, you could re-use your code from lab 1 in exercise 2.1 and 2.2.</p>
+
+
+<h3>Exercise 2.1 (3 points)</h3>
+<p>Create a function called <code>printSum()</code> that should take two variables, the sum of the players hand and the sum of the dealers hand.</p>
+
+<p>Your hand should be three cards with the values: <code>4, 10 and 3</code>.<br />
+The dealers hand should be three card with the values: <code>3, 6, 11</code>.<br />
+The function should return the sum and the player: <code>Player: 17, Dealer: 20</code>.</p>
+
+<p>Test your function with the given values and answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 2.2 (3 points)</h3>
+<p>Create a function called <code>printResult()</code> that should take two variables, the sum of the players hand and the sum of the dealers hand.</p>
+
+<p>Players hand should be three cards with the values: <code>4, 10 and 3</code>. The dealers hand should be three card with the values: <code>3, 6, 11</code>.</p>
+
+<p>This time you should include the check from lab 2 where you find out the boundaries of the player and the dealer.<br />
+Player hand = 21 (black jack).<br />
+Player hand less than 21 (safe).<br />
+Player hand larger than 21 (busted).<br />
+Dealer hand less than 17 (safe).<br />
+Dealer hand larger or equal to 17 and less than 21 (stop).<br />
+Dealer hand = 21 (black jack).<br />
+Delaer hand larger than 21 (busted).</p>
+
+<p>Return a string in the format: <code>Player: safe, Dealer: busted</code>.</p>
+
+<p>Test your function with the given values and answer with the result.</p>
+
+
+
+
+
+
+<h3>Exercise 2.3 (3 points)</h3>
+<p>Create a function called <code>calculateInterest()</code> that returns the money you have after x years of interest, given three arguments: <code>745, 31 and 5</code>. First argument represents the start money, the second argument represents the number of years your money produces interest. The third argument is the interest rate in percent (%).</p>
+
+<p>Test your function and answer with the result with a maximum of 4 decimals.</p>
+
+
+
+
+
+
+
+<hr>
+<code>103a89eac5bbd238d5bb6013b1a025ae</code>
+
+</body>
+</html>
