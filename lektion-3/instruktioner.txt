@@ -1,0 +1,57 @@
+LEKTION 3 - FASTAPI INTRODUKTION
+=================================
+
+Denna lektion introducerar FastAPI, ett modernt Python-ramverk för att bygga API:er.
+
+KOMMA IGÅNG
+-----------
+
+1. Studera koden i fastapi-intro/app.py
+   - Förstå hur routing fungerar
+   - Kolla på async/await syntax
+   - Se hur middleware fungerar
+   - Observera print-statements i CLI:n
+
+2. Starta servern:
+   cd fastapi-intro
+   python app.py
+
+3. Testa endpoints:
+   - Öppna http://localhost:8000 i webbläsaren
+   - Utforska http://localhost:8000/docs (Swagger UI)
+   - Prova olika endpoints med curl 
+   - Använd Postman eller Insomnia
+
+ÖVNING
+------
+
+Sätt upp ett eget FastAPI-projekt för att öva.
+
+1. Hitta ett öppet API som du vill prova att hämta data från.
+
+   Exempel på API:er:
+   - https://polisen.se/om-polisen/om-webbplatsen/oppna-data/api-over-polisens-handelser/
+   - https://wheretheiss.at/w/developer
+   - https://jsonplaceholder.typicode.com/posts
+   - https://api-ninjas.com/
+   - https://pokeapi.co/
+
+2. Börja med att utforska API:et du vill använda med Postman / Insomnia
+   - Testa olika endpoints
+   - Se vilken data som returneras
+   - Förstå request/response strukturen
+
+3. Bygg logik på din server (app.py)
+   - Skapa endpoints som hämtar data från ditt valda API
+   - Använd httpx för async requests
+   - Printa data till CLI:n så du ser vad som händer
+   - Returnera JSON-data från dina endpoints
+
+4. Lägg till fler funktioner:
+   - Filtrering (query parameters)
+   - Sökning (path parameters)
+   - POST endpoints för att skicka data
+   - Error handling
+   - Data transformation/bearbetning
+
+
