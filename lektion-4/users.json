@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Anna Andersson",
+    "email": "anna@example.com",
+    "age": 26,
+    "id": 1,
+    "created_at": "2026-03-04 21:56:40.103920",
+    "password": "secret123"
+  },
+  {
+    "name": "Erik Eriksson",
+    "email": "erik@example.com",
+    "age": 30,
+    "id": 2,
+    "created_at": "2026-03-04 21:56:47.815205",
+    "password": "password123"
+  }
+]
