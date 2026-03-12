@@ -14,5 +14,13 @@
     "id": 2,
     "created_at": "2026-03-04 21:56:47.815205",
     "password": "password123"
+  },
+  {
+    "name": "Test User",
+    "email": "test@example.com",
+    "age": 25,
+    "id": 3,
+    "created_at": "2026-03-11 19:56:42.078927",
+    "password": "$2b$12$eBfEUCii9sS5cv5OtQEYG.g9eH9zEnz71I8L2sQVU5.1379I/u07O"
   }
 ]

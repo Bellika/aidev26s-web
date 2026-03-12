@@ -2,13 +2,14 @@ from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 from routes.users import router as users_router
+from routes.auth import router as auth_router
 from config.database import init_db, get_db
 
 # Create the FastAPI application
 app = FastAPI(
-    title="User Management API with MySQL",
-    description="An API for managing users with MySQL database, SQLAlchemy models, and password hashing",
-    version="1.0.0"
+    title="User Management API with MySQL and JWT Auth",
+    description="An API for managing users with MySQL database, SQLAlchemy models, password hashing, and JWT authentication",
+    version="2.0.0"
 )
 
 # Initialize database tables on startup
@@ -25,8 +26,9 @@ async def startup_event():
     print("="*60 + "\n")
 
 
-# Include the user router
+# Include routers
 app.include_router(users_router)
+app.include_router(auth_router)
 
 
 @app.get("/")
@@ -35,9 +37,9 @@ async def root():
     Root endpoint that displays information about the API.
     """
     return {
-        "message": "Welcome to User Management API with MySQL!",
-        "version": "1.0.0",
-        "description": "This is lesson 5 - FastAPI with MySQL database and full CRUD",
+        "message": "Welcome to User Management API with MySQL and JWT Auth!",
+        "version": "2.0.0",
+        "description": "This is lesson 5 - FastAPI with MySQL database, CRUD, and JWT Authentication",
         "endpoints": {
             "/": "This page",
             "/users": "GET - Fetch all users",
@@ -45,6 +47,10 @@ async def root():
             "/users": "POST - Create a new user",
             "/users/{id}": "PUT - Update a user",
             "/users/{id}": "DELETE - Delete a user",
+            "/auth/login": "POST - Login and get JWT token in HTTP-only cookie",
+            "/auth/logout": "POST - Logout and clear cookie",
+            "/auth/me": "GET - Get current user info (protected)",
+            "/auth/secret": "GET - Access secret endpoint (protected)",
             "/docs": "Swagger UI - Interactive API documentation",
             "/redoc": "ReDoc - Alternative API documentation"
         },
@@ -55,7 +61,9 @@ async def root():
             "Password hashing with bcrypt",
             "Full CRUD operations with database",
             "Pydantic schemas for validation",
-            "Dependency injection with FastAPI"
+            "Dependency injection with FastAPI",
+            "JWT authentication with HTTP-only cookies",
+            "Protected routes with dependencies"
         ]
     }
 
@@ -85,27 +93,34 @@ async def health_check(db: Session = Depends(get_db)):
 
 if __name__ == "__main__":
     import uvicorn
-    print("\n" + "="*60)
-    print("🚀 Starting User Management API with MySQL...")
-    print("="*60)
-    print("📚 Lesson 5: FastAPI with MySQL database and full CRUD")
-    print("="*60)
+    print("\n" + "="*70)
+    print("🚀 Starting User Management API with MySQL and JWT Auth...")
+    print("="*70)
+    print("📚 Lesson 5: FastAPI with MySQL, CRUD, and JWT Authentication")
+    print("="*70)
     print("📖 API Documentation:")
     print("   - Swagger UI: http://localhost:8000/docs")
     print("   - ReDoc:      http://localhost:8000/redoc")
-    print("="*60)
-    print("🔗 Endpoints:")
+    print("="*70)
+    print("🔗 User Endpoints:")
     print("   - GET    /users       - Fetch all users")
     print("   - GET    /users/{id}  - Fetch a user")
     print("   - POST   /users       - Create new user")
     print("   - PUT    /users/{id}  - Update user")
     print("   - DELETE /users/{id}  - Delete user")
-    print("="*60)
-    print("🔐 Features:")
+    print("="*70)
+    print("🔐 Auth Endpoints:")
+    print("   - POST   /auth/login  - Login (get JWT in HTTP-only cookie)")
+    print("   - POST   /auth/logout - Logout (clear cookie)")
+    print("   - GET    /auth/me     - Get current user (protected)")
+    print("   - GET    /auth/secret - Access secret (protected)")
+    print("="*70)
+    print("✨ Features:")
     print("   - MySQL database with SQLAlchemy")
     print("   - Password hashing with bcrypt")
+    print("   - JWT authentication with HTTP-only cookies")
+    print("   - Protected routes")
     print("   - Full CRUD operations")
-    print("   - Pydantic validation")
-    print("="*60 + "\n")
+    print("="*70 + "\n")
 
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
