@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 from routes.users import router as users_router
@@ -10,6 +11,15 @@ app = FastAPI(
     title="User Management API with MySQL and JWT Auth",
     description="An API for managing users with MySQL database, SQLAlchemy models, password hashing, and JWT authentication",
     version="2.0.0"
+)
+
+# Configure CORS for React frontend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # Vite default port
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Initialize database tables on startup
